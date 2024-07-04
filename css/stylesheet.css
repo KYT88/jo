@@ -10,6 +10,9 @@
     padding: 20px;
     font-size: x-large;
 }
+.navphone{
+    display: none;
+}
 
 nav{
     flex: 1;
@@ -113,13 +116,41 @@ p{
     min-width: 250px;
     margin-bottom: 30px;
     margin-top: 30px;
+    margin-right: 20px;
+    transition: 0.5s;
+    position: relative;
 }
 
 .col-3 img{
     width: 100%;
     border-radius: 50px;
-    padding-left: 20px;
+    justify-content: center;
+    transition: 0.5s;
 }
+
+.col-3 img:hover{
+    opacity: 0.85;
+    box-shadow:  1px 1px 5px 1px #ffd6d6;
+    transform: translateY(-5px)
+}
+
+.col-3 a{
+    position: absolute;
+    color: #fff;
+    left: 10%;
+    top: 50%;
+    font-size: 30px;
+}
+
+.tb{
+    display: block;
+    text-align: center;
+    width: 135%;
+    background-color: #555;
+    border-radius: 5%;
+}
+
+
 
 .small-container {
     max-width: 1080px;
@@ -164,6 +195,7 @@ p{
 
 }
 
+
 .title{
   text-align: center;
   margin: 0 auto 80px;
@@ -196,6 +228,36 @@ h4{
     color: #ff523b;
 }
 
+footer{
+    width: 100%;
+    background-color: #ffd6d6;
+    color: #555;
+    padding: 20px 50px 80px; 
+    margin-top: 80px;
+}
+footer img{
+    width: 100%;
+    height: 200px;
+    
+}
+.boxy{
+    content: ' ';
+    background-color: #555;
+    width: 100%;
+    height: 50px;
+}
+.bottom{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+.bottom p{
+    color: #fff;
+}
+
 @media screen and (max-width: 1080px) { 
      
 
@@ -207,7 +269,47 @@ h4{
     .col-4 img{
        height: 200px;
     }
+
+    .navbar{
+     display: none;
+    }
+
+    .tb{
+        width: 100%;
+    }
+
+    .navphone{
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        font-size: x-large;
+    }
+
+    
+    .togle{
+        padding-left: 20px;
+        flex: 1;
+    }
+  
+    .togle button{ 
+            width: 50px;
+            height: 10px;
+            background-color: black;
+            margin: 3px 0px;
+          
+    }
+  
+    .hid{
+        display: none;
+    }
+
+  .bar1 :active{
+    .hid{
+        display: flex;
+    }
+    .togle div{
+        width: 10px;
+        height: 50px;
+    }
+  }
 }
-
-
-
